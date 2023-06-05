@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+
+<form action="f_save" method="post">
+    {% csrf_token %}
+  <input type="hidden" name="_csrf">
+  <p>name <input id="name" type="text" name="name"></p>
+  <p>age <input id="age" type="text" name="age"></p>
+  <p>city <input id="city" type="text" name="city"></p>
+  <input type="submit" name='save' value="Save form">
+  <input type="submit" name='save in DB' value="Save form in DB" >
+</form>
+</body>
+</html>
